@@ -1,1 +1,1 @@
-print("This is a example project for python ")
+print("This is a example project for python")    
