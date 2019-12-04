@@ -11,10 +11,13 @@ def test_var():
     msg = "B"
     print(msg)
 
-    # Traceback：NameError: name 'message' is not defined
+    # ERROR:Traceback：NameError: name 'message' is not defined
     # print(message)
 
-    # Traceback ：NameError: name 'num' is not defined
+    # ERROR:Traceback ：NameError: name 'num' is not defined
     # num
     # print(num)
     return
+
+
+test()

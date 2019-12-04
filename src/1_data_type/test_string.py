@@ -2,6 +2,7 @@ def test():
     test_string()
     return
 
+
 # String
 def test_string():
     print("String 1")
@@ -52,3 +53,6 @@ def test_string():
     print("   88mn88".lstrip('8'))
     print("88mn88".lstrip('8'))
     return
+
+
+test()

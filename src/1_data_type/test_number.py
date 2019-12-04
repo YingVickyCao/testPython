@@ -38,7 +38,7 @@ def test_float():
 # number -> string
 def test_number_to_string():
     age = 10
-    # Traceback : TypeError: can only concatenate str (not "int") to str
+    # ERROR:Traceback : TypeError: can only concatenate str (not "int") to str
     # msg = "Happy" + age + "rd Birthday!"
     msg = "Happy " + str(age) + "rd Birthday!"
     print(msg)
@@ -50,3 +50,6 @@ def test_number_to_string():
     print(3 / 2.0)  # 1.5
     print(3.0 / 2.0)  # 1.5
     return
+
+
+test()
