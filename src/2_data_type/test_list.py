@@ -1,3 +1,9 @@
+def create_empty_list():
+    phone_device_types = []
+    print(phone_device_types)
+    return
+
+
 def access_list_item():
     phone_device_types = ["IOS", "Android"]
     print(phone_device_types)  # ['IOS', 'Android']
@@ -161,6 +167,7 @@ def traversing_list():
 
 
 def create_value_list():
+    create_empty_list()
     create_value_list4_use_range()
     return
 
