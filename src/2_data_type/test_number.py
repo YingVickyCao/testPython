@@ -5,9 +5,15 @@ def test():
 
 # number
 def test_number():
-    test_integer()
-    test_float()
-    test_number_to_string()
+    # test_integer()
+    # test_float()
+    # test_number_to_string()
+    mode_operation()
+    return
+
+
+def mode_operation():
+    print(4 % 3)  # 1
     return
 
 
