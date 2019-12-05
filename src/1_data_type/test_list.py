@@ -10,7 +10,7 @@ def access_list_item():
 
     # -2 = 倒数第二个
     print(phone_device_types[-2])
-    
+
     # print(phone_device_types[-3])                 # ERROR: Traceback (most recent call last): IndexError: list index out of range
 
     shopping_name = []
@@ -146,14 +146,141 @@ def length_of_list():
     return
 
 
+def traversing_list():
+    score = [90, 94, 98]
+    for item in score:
+        print(item)
+    return
+
+
+def traversing_list():
+    score = [90, 94, 98]
+    for item in score:
+        print(item)
+    return
+
+
+def create_value_list():
+    create_value_list4_use_range()
+    return
+
+
+def create_value_list4_use_range():
+    # range(): start from first param, stop until second param. [)
+    for value in range(1, 5):
+        print(value)
+
+    # list(range(1, 5))：convert result to a list
+    nums = list(range(1, 5))  # [1, 2, 3, 4]
+    print(nums)
+
+    # create list with step: [)
+    even_number = list(range(2, 11, 2))
+    print(even_number)  # [2, 4, 6, 8, 10]
+
+    even_number2 = list(range(2, 12, 2))
+    print(even_number2)  # [2, 4, 6, 8, 10]
+    return
+
+
+# 统计计算
+def statistical_computing():
+    digits = [1, 10, 3]
+    min_digit = min(digits)
+    print(min_digit)  # 1
+
+    max_digit = max(digits)
+    print(max_digit)  # 10
+
+    sum_of_digits = sum(digits)
+    print(sum_of_digits)  # 14
+    return
+
+
+# 列表解析
+def list_comprehension():
+    squares = []
+    for value in range(1, 5):
+        # square = value ** 2
+        # squares.append(square)
+        squares.append(value ** 2)
+    print(squares)  # [1, 4, 9, 16]
+
+    # 列表解析将for循环和创建新元素的代码合并成一行，并自动附加新元素。
+    # 首先指定一个描述性的列表名，squares2;然后，指定一个左方括号， 并定义一个表达式，用于生成你要存储到列表中的值。在这个示例中，表达式为value**2，它计 算平方值。接下来，编写一个for循环，用于给表达式提供值，再加上右方括号。
+    # 在这个示例中，for循环为for value in range(1,11)，它将值1~10提供给表达式value**2。
+    # Why use it ? 使用代码生成列表太繁琐。创建列表解析，以简化生成列表。
+    squares2 = [value ** 2 for value in range(1, 5)]
+    print(squares2)  # [1, 4, 9, 16]
+    return
+
+
+# 切片
+def segment():
+    players = ["1", '2', "3", "4", "5", '6']
+    # [startIndex : endIndex]
+    print(players[0:2])  # ['1', '2']
+    print(players[1:4])  # ['2', '3', '4']
+    print(players[1:10])  # ['2', '3', '4', '5', '6']
+
+    # When no start index, [0:
+    print(players[:2])  # ['1', '2']
+
+    # When no end index, :lastIndex]
+    print(players[1:])  # ['2', '3', '4', '5', '6']
+
+    # 负数索引： [倒数第n个:last index]
+    print(players[-3:])  # ['4', '5', '6']
+    print(players[-10:])  # ['1', '2', '3', '4', '5', '6']
+
+    # traversing segment
+    # 1
+    # 2
+    for item in players[:2]:
+        print(item)
+
+    # Copy list
+    # Copy whole list
+    # =[:]:value copy
+    # 使用列表副本
+    my_shopping_foods = ["pizza", 'cake', 'coffee']
+    friend_shopping_foods = my_shopping_foods[:]
+    print(my_shopping_foods)  # ['pizza', 'cake', 'coffee']
+    print(friend_shopping_foods)  # ['pizza', 'cake', 'coffee']
+
+    my_shopping_foods.append('water')
+    friend_shopping_foods.append('ice cream')
+    print(my_shopping_foods)  # ['pizza', 'cake', 'coffee', 'water']
+    print(friend_shopping_foods)  # ['pizza', 'cake', 'coffee', 'ice cream']
+
+    # = : set ref
+    # 设置引用
+    my_languages = ['C', "C++", 'Java', "JS"]
+    friend_languages = my_languages
+    print(my_languages)
+    print(friend_languages)
+
+    my_languages.append('Python')
+    friend_languages.append("Excel")
+    print(my_languages)  # ['C', 'C++', 'Java', 'JS', 'Python', 'Excel']
+    print(friend_languages)  # ['C', 'C++', 'Java', 'JS', 'Python', 'Excel']
+    # Copy segment
+    return
+
+
 def test():
-    access_list_item()
+    # access_list_item()
     # modify_item()
     # add_item()
     # remove_item()
     # sort_list()
     # reverse_list()
     # length_of_list()
+    # traversing_list()
+    # create_value_list()
+    # statistical_computing()
+    # list_comprehension()
+    segment()
     return
 
 
