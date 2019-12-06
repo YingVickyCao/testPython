@@ -216,7 +216,7 @@ def import_module():
 
     # 导入模块中的所有函数
     print("\n")
-    function_1() # function_1
+    function_1()  # function_1
 
 
 def test():
