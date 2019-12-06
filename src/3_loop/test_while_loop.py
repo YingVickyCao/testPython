@@ -69,12 +69,40 @@ def continue_in_loop():
     return
 
 
+# Good: while > for
+def move_items_between_list():
+    confirmed_users = []
+    unconfirmed_users = ['A', "B", 'C']
+    while unconfirmed_users:
+        current_user = unconfirmed_users.pop()
+        # C
+        # B
+        # A
+        print(current_user)
+        confirmed_users.append(current_user)
+
+    print(confirmed_users)  # ['C', 'B', 'A']
+    print(unconfirmed_users)  # []
+    return
+
+
+# Good: while > for
+def remove_special_items_in_list():
+    pets = ['dog', 'cat', 'dog', 'cat', 'rabbit', 'cat']
+    while 'cat' in pets:
+        pets.remove('cat')
+    print(pets)  # ['dog', 'dog', 'rabbit']
+    return
+
+
 def test():
-    # check_while_exit_condition()
-    # let_user_choose_when_exit()
-    # let_user_choose_when_exit_4_user_flag()
-    # break_to_exit_loop()
+    check_while_exit_condition()
+    let_user_choose_when_exit()
+    let_user_choose_when_exit_4_user_flag()
+    break_to_exit_loop()
     continue_in_loop()
+    move_items_between_list()
+    remove_special_items_in_list()
     return
 
 
