@@ -1,3 +1,6 @@
+from test_method import hi
+
+
 class Dog:
     # 如果不继承，省略()
     # class Dog():
@@ -46,3 +49,6 @@ class Dog:
 # my_dog = Dog('Dog-a', 1)
 # my_dog.sit()  # Dog-a is sitting.
 # print("Dog's name is " + my_dog.name)  # Dog's name is Dog-a
+
+
+hi("123")

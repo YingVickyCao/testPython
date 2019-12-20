@@ -8,8 +8,9 @@ def file_path():
     # print_file("text_files\one.txt")  # Windows,1
 
     # 绝对文件路径
-    print_file("/Users/hades/Documents/project/testPython/src/9_io/read/text_files/one.txt")  # OS，1
-    # print_file("C:\Users\hades\Documents\project\testPython\src\9_io\read\text_files/one.txt")  # Windows，1
+    print_file(
+     "/Users/hades/Documents/project/testPython/python_basics/src/9_io/read/text_files/one.txt")  # OS，1
+    # print_file("C:\Users\hades\Documents\project\testPython\python_basics\src\9_io\read\text_files/one.txt")  # Windows，1
     return
 
 
@@ -85,9 +86,9 @@ def read_file_contents_outside_with():
 
 def test():
     # read_while_file()
-    # file_path()
+    file_path()
     # read_while_file()
-    read_file_contents_outside_with()
+    # read_file_contents_outside_with()
 
 
 test()
