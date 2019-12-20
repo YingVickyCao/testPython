@@ -1,4 +1,4 @@
-from default.define.dog import Dog
+from dog import Dog
 
 
 def test():
@@ -11,7 +11,6 @@ def test():
     print("Dog's name is " + dog.name)  # Dog's name is B
     print("Dog's name is " + dog.get_name())  # Dog's name is B
     print("Dog's type is " + dog.get_type_name())  # Dog's type is normal
-
 
     # 修改属性的值
     dog.type_name = "Ha Shi Qi"
